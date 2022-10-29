@@ -1,8 +1,7 @@
 import { Box, createTheme, ThemeProvider } from '@mui/material';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './App.css';
 import Header from './components/header/header.component';
-import { motion } from 'framer-motion';
+import DownArrow from './components/down-arrow/down-arrow.component'
 
 declare module '@mui/material/styles' {
   interface Theme {
@@ -30,7 +29,6 @@ const bodyTheme = createTheme({
 });
 
 function App() {
-  
   return (
     <ThemeProvider theme={bodyTheme}>
       <div className="App">
@@ -51,9 +49,7 @@ function App() {
             </div>
             <div className='cursor-pointer '>
               <a href='#s1'>
-                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-                  <KeyboardArrowDownIcon sx={{ fontSize: 40, color: '#fff', marginTop: 20 }} />
-                </motion.div>
+                <DownArrow />
               </a>
             </div>
           </div>
