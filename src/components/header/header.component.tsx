@@ -14,7 +14,7 @@ import DiamondIcon from '@mui/icons-material/Diamond';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 
-const pages = ['About', 'Products', 'Pricing', 'Blog'];
+const pages = ['For Accounting Firms', 'For Businesses', 'Pricing', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 declare module '@mui/material/styles' {
@@ -46,14 +46,12 @@ function Header() {
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElUser(event.currentTarget);
+  };
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
@@ -63,17 +61,21 @@ function Header() {
       <AppBar position="fixed">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
+
             <Typography
               variant="h6"
               noWrap
               component="a"
               href="/"
               sx={{
-                mr: 3,
+                mr: 7.5,
                 display: { xs: 'none', md: 'flex' }
               }}
             >
-              <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+              <div>
+                <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+                <p className='text-white text-right' style={{ fontSize: '.4rem'}}>Solutions</p>
+              </div>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -87,6 +89,7 @@ function Header() {
               >
                 <MenuIcon />
               </IconButton>
+
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
@@ -112,25 +115,30 @@ function Header() {
                 ))}
               </Menu>
             </Box>
+
             <Typography
               variant="h5"
               noWrap
               component="a"
               href=""
               sx={{
-                mr: 2,
+                mr: 4,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1
               }}
             >
-              <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+              <div className='py-2'>
+                <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+                <p className='text-white text-right text-xs'>Solutions</p>
+              </div>
             </Typography>
+
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 4, color: '#fff', display: 'block', textTransform: 'capitalize', fontSize: 18, fontFamily: 'Roboto',
+                  sx={{ my: 4, mr: 1.5, color: '#fff', display: 'block', textTransform: 'capitalize', fontSize: 18, fontFamily: 'Roboto',
                     '&:hover': {
                       backgroundColor: 'primary.main',
                       opacity: [0.9, 0.8, 0.7],
