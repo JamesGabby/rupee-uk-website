@@ -32,10 +32,10 @@ declare module '@mui/material/styles' {
   }
 }
 
-const darkGreenHeaderTheme = createTheme({
+const blackHeaderTheme = createTheme({
   palette: {
     primary: {
-      main: '#000',
+      main: 'rgba(201, 76, 76, 0);',
     },
   },
 });
@@ -71,8 +71,8 @@ function Header() {
   window.addEventListener('scroll', reForm);
 
   return (
-    <ThemeProvider theme={hasScrolled ? darkGreenHeaderTheme : darkBlueHeaderTheme}>
-      <AppBar position="fixed" >
+    <ThemeProvider theme={hasScrolled ? darkBlueHeaderTheme : blackHeaderTheme}>
+      <AppBar position="fixed" elevation={hasScrolled ? 2 : 0}>
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={hasScrolled ? {height: '5rem', transition: 'height 0.7s'} : {height: '7rem', transition: 'height 0.7s'}}>
             <Typography
@@ -138,7 +138,7 @@ function Header() {
               }}
             >
               <div>
-                <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+                <img className='w-32' src={logo} alt='logo' />
                 <p className='text-white text-right text-xs'>Solutions</p>
               </div>
             </Typography>

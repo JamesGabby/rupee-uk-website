@@ -1,32 +1,6 @@
 .App {
   text-align: center;
-  background-color: blanchedalmond;
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5f1e55e18ba283c9ad86684a/0x0.jpg?format=jpg&width=1200");
+  background-size: cover;
   height: 100%;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-footer {
-  position: absolute;
-  min-height: 10vh;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: calc(10px + 2vmin);
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-}
-
-a {
-  scroll-behavior: smooth !important;
 }

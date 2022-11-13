@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/header/header.component';
 import SectionOne from './pages/accounting-firms/section-one/section-one.component';
 import SectionTwo from './pages/accounting-firms/section-two/section-two.component';
+import SectionThree from './pages/accounting-firms/section-three/section-three.component';
   
 const bodyTheme = createTheme({
   palette: {
@@ -30,6 +31,7 @@ const App = () => {
             height: 800
           }}
         >
+          <SectionThree />
         </Box>      
       </div>
     </ThemeProvider>
