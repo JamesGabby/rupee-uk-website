@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rupee-uk-website/static/css/main.abb2abdf.css",
+    "main.js": "/rupee-uk-website/static/js/main.42a526df.js",
+    "static/js/787.b7b32b64.chunk.js": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js",
+    "index.html": "/rupee-uk-website/index.html",
+    "main.abb2abdf.css.map": "/rupee-uk-website/static/css/main.abb2abdf.css.map",
+    "main.42a526df.js.map": "/rupee-uk-website/static/js/main.42a526df.js.map",
+    "787.b7b32b64.chunk.js.map": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abb2abdf.css",
+    "static/js/main.42a526df.js"
+  ]
+}
