@@ -13,7 +13,7 @@ const SectionTwo = () => {
     >
       <Grid id='s1' container sx={{ flexGrow: 1 }} spacing={1}>
         <Grid item xs={12}>
-          <h1 className='text-4xl text-white font-semibold mt-28'>Increase the performance of your accounting firm.</h1>
+          <h1 className='text-4xl text-white font-semibold mt-28 px-1'>Increase the performance of your accounting firm.</h1>
           <div className='flex items-center flex-col px-4'>
             <span className='inline-flex'>
               <DiamondIcon sx={{ fontSize: 40, color: '#44ae44', marginTop: 7, marginRight: 3 }} />

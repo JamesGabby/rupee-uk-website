@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, createTheme, ThemeProvider, Paper, Grid } from '@mui/material';
+import { Box, createTheme, ThemeProvider } from '@mui/material';
 import './App.css';
 import Header from './components/header/header.component';
 import SectionOne from './pages/accounting-firms/section-one/section-one.component';
@@ -23,7 +23,6 @@ const App = () => {
         <Header />
         <SectionOne />
         <SectionTwo />
-
         <Box 
           sx={{
             width: '100%',
@@ -31,9 +30,7 @@ const App = () => {
             height: 800
           }}
         >
-
-        </Box>
-        
+        </Box>      
       </div>
     </ThemeProvider>
   );

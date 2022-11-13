@@ -39,9 +39,18 @@ const darkGreenHeaderTheme = createTheme({
   },
 });
 
+const darkBlueHeaderTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#12263A',
+    },
+  },
+});
+
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [hasScrolled, setHasScrolled] = React.useState<null | boolean>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -55,13 +64,16 @@ function Header() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const reForm = () =>
+    window.scrollY >= 50 ? setHasScrolled(true) : setHasScrolled(false);
+
+  window.addEventListener('scroll', reForm);
 
   return (
-    <ThemeProvider theme={darkGreenHeaderTheme}>
-      <AppBar position="fixed">
+    <ThemeProvider theme={hasScrolled ? darkGreenHeaderTheme : darkBlueHeaderTheme}>
+      <AppBar position="fixed" >
         <Container maxWidth="xl">
-          <Toolbar disableGutters>
-
+          <Toolbar disableGutters sx={hasScrolled ? {height: '5rem', transition: 'height 0.7s'} : {height: '7rem', transition: 'height 0.7s'}}>
             <Typography
               variant="h6"
               noWrap
@@ -77,7 +89,6 @@ function Header() {
                 <p className='text-white text-right' style={{ fontSize: '.4rem'}}>Solutions</p>
               </div>
             </Typography>
-
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
                 size="large"
@@ -89,7 +100,6 @@ function Header() {
               >
                 <MenuIcon />
               </IconButton>
-
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
@@ -115,7 +125,6 @@ function Header() {
                 ))}
               </Menu>
             </Box>
-
             <Typography
               variant="h5"
               noWrap
@@ -127,12 +136,11 @@ function Header() {
                 flexGrow: 1
               }}
             >
-              <div className='py-2'>
+              <div>
                 <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
                 <p className='text-white text-right text-xs'>Solutions</p>
               </div>
             </Typography>
-
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
@@ -149,7 +157,6 @@ function Header() {
                 </Button>
               ))}
             </Box>
-
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -185,4 +192,5 @@ function Header() {
     </ThemeProvider>
   );
 }
+
 export default Header;
