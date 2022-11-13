@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
+import logo from '../../images/Rupee-logo-dark.png'
 
 const pages = ['For Accounting Firms', 'For Businesses', 'Pricing', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -85,7 +86,7 @@ function Header() {
               }}
             >
               <div>
-                <img className='w-32' src='/Rupee-logo-dark.png' alt='logo' />
+                <img className='w-32' src={logo} alt='logo' />
                 <p className='text-white text-right' style={{ fontSize: '.4rem'}}>Solutions</p>
               </div>
             </Typography>

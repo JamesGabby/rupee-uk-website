@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
+import logo from '../../../images/Rupee-logo-dark.png'
 
 const SectionOne = () => {
   return (
@@ -12,7 +13,7 @@ const SectionOne = () => {
     >
       <div className='flex items-center flex-col'>
         <div className='p-2'>
-          <img className='w-96 mt-56' src='/Rupee-logo-dark.png' alt='logo' />
+          <img className='w-96 mt-56' src={logo} alt='logo' />
           <p className='text-white text-right font-medium'>Solutions</p>
         </div>
         <div>
