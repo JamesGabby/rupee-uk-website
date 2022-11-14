@@ -13,15 +13,15 @@ const SectionTwo = () => {
     >
       <Grid id='s1' container sx={{ flexGrow: 1 }} spacing={1}>
         <Grid item xs={12}>
-          <h1 className='text-4xl text-white font-semibold mt-20 px-1'>Increase the performance of your accounting firm.</h1>
+          <h1 className='text-4xl text-green-100 font-semibold mt-20 px-1'>Increase the performance of your accounting firm.</h1>
           <div className='flex items-center flex-col px-10'>
             <span className='inline-flex'>
               <DiamondIcon sx={{ fontSize: 40, color: '#44ae44', marginTop: 7, marginRight: 3 }} />
-              <h3 className='text-2xl text-white font-normal mt-14'>Save time and optimise your results by monitoring all your clients in one place.</h3>
+              <h3 className='text-2xl text-green-100 font-normal mt-14'>Save time and optimise your results by monitoring all your clients in one place.</h3>
             </span>
             <span className='inline-flex'>
               <DiamondIcon sx={{ fontSize: 40, color: '#44ae44', marginTop: 4, marginRight: 3 }} />
-              <h3 className='text-2xl text-white font-normal mt-8'>Have full control over payroll, tax and accounting tasks.</h3>
+              <h3 className='text-2xl text-green-100 font-normal mt-8'>Have full control over payroll, tax and accounting tasks.</h3>
             </span>
             <span className='inline-flex'>
               <DiamondIcon sx={{ fontSize: 40, color: '#44ae44', marginTop: 4, marginRight: 3 }} />
