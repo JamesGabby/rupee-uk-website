@@ -6,7 +6,7 @@ const Footer = () => {
   const [isNotWeb, setIsNotWeb] = useState(false);
 
   const reSize = () =>
-    window.innerWidth < 800 ? setIsNotWeb(true) : setIsNotWeb(false);
+    window.innerWidth < 700 ? setIsNotWeb(true) : setIsNotWeb(false);
 
   window.addEventListener('resize', reSize);
   return (

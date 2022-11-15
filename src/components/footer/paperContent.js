@@ -11,6 +11,6 @@ export const paperContent = [
   },
   {
     id: 3,
-      title: <a href="https://www.linkedin.com/company/rupee-uk/"><img src={LinkedInLogo} alt="logo" style={{ width: 40 }} /></a>
+    title: <a href="https://www.linkedin.com/company/rupee-uk/"><img src={LinkedInLogo} alt="logo" style={{ width: 40 }} /></a>
   }
 ]
