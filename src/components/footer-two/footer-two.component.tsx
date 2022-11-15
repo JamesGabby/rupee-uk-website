@@ -11,7 +11,7 @@ function FooterTwo() {
   window.addEventListener('resize', reSize);
 
   return (
-    <div className={`w-full h-32 ${isNotWeb ? 'flex-column' : 'flex'} items-center justify-around bg-black text-center`}>
+    <div className={`w-full ${isNotWeb ? 'h-32' : 'h-24'} ${isNotWeb ? 'flex-column' : 'flex'} items-center justify-around bg-black text-center`}>
       <p className="text-l text-white font-semibold pt-4">+447746767412</p>
       <p className="text-l text-white font-semibold py-2">oliver.jones@rupee.solutions</p>
       <a href="https://www.linkedin.com/company/rupee-uk/" target="_blank"  rel="noreferrer">
