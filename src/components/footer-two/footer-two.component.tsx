@@ -14,7 +14,7 @@ function FooterTwo() {
     <div className={`w-full h-32 ${isNotWeb ? 'flex-column' : 'flex'} items-center justify-around bg-black text-center`}>
       <p className="text-l text-white font-semibold pt-4">+447746767412</p>
       <p className="text-l text-white font-semibold py-2">oliver.jones@rupee.solutions</p>
-      <a href="https://www.linkedin.com/company/rupee-uk/">
+      <a href="https://www.linkedin.com/company/rupee-uk/" target="_blank"  rel="noreferrer">
         <img className={`w-8 ${isNotWeb ? 'mx-40' : 'mx-0'} py-2`} src={LinkedInLogo} alt="logo" />
       </a>
     </div>

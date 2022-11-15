@@ -5,8 +5,8 @@ import Header from './components/header/header.component';
 import SectionOne from './pages/accounting-firms/section-one/section-one.component';
 import SectionTwo from './pages/accounting-firms/section-two/section-two.component';
 import SectionThree from './pages/accounting-firms/section-three/section-three.component';
-import Footer from './components/footer/footer.component';
 import FooterTwo from './components/footer-two/footer-two.component';
+import Copyright from './components/copyright/copyright.component';
   
 const bodyTheme = createTheme({
   palette: {
@@ -27,8 +27,8 @@ const App = () => {
         <SectionOne />
         <SectionTwo />   
         <SectionThree />
-        {/* <Footer /> */}
         <FooterTwo />
+        <Copyright />
       </div>
     </ThemeProvider>
   );
