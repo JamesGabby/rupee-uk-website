@@ -154,7 +154,7 @@ function Header() {
                     },
                   }}
                 >
-                  {page}
+                  <a href="/businesses">{page}</a>
                 </Button>
               ))}
             </Box>
