@@ -25,8 +25,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="accounting" element={<Accounting />} />
-          <Route path="business" element={<Businesses />} />
+          <Route path="/accounting" element={<Accounting />} />
+          <Route path="/business" element={<Businesses />} />
         </Routes>
       </div>
     </ThemeProvider>
