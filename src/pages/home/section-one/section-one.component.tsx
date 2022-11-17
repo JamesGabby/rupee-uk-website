@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import { Helmet } from 'react-helmet';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
 
@@ -12,6 +13,12 @@ const SectionOne = () => {
         backgroundSize: 'cover'
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Rupee Solutions UK</title>
+        <link rel="canonical" href="https://rupeesolutions.co.uk/" />
+        <meta name="description" content="Intelligent management of tax, accounting and payroll processes." />
+      </Helmet>
       <Box
         sx={{
           width: '100%',
@@ -25,7 +32,7 @@ const SectionOne = () => {
             <p className='text-white text-right font-medium'>Solutions</p>
           </div>
           <div>
-            <h1 className='text-4xl text-white font-semibold mt-12'>Accounting</h1>
+            <h1 className='text-4xl text-white font-semibold mt-12'>HOME</h1>
           </div>
           <div className='cursor-pointer '>
             <a href='#s1'>
