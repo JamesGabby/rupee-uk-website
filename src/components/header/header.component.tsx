@@ -14,8 +14,11 @@ import DiamondIcon from '@mui/icons-material/Diamond';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import logo from '../../images/Rupee-logo-dark.png'
+import { Link } from 'react-router-dom';
 
-const pages = ['For Accounting Firms', 'For Businesses', 'Pricing', 'About'];
+const pages = [
+  { title: 'For Accounting Firms', link: "/accounting" }, { title: 'For Businesses', link: "/business" }
+];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 declare module '@mui/material/styles' {
@@ -86,7 +89,7 @@ function Header() {
               }}
             >
               <div>
-                <img className='w-32' src={logo} alt='logo' />
+              <Link to="/"><img className='w-32' src={logo} alt='logo' /></Link>
                 <p className='text-white text-right' style={{ fontSize: '.4rem'}}>Solutions</p>
               </div>
             </Typography>
@@ -120,8 +123,8 @@ function Header() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                  <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.title}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -145,7 +148,7 @@ function Header() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
-                  key={page}
+                  key={page.title}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 4, mr: 1.5, color: '#fff', display: 'block', textTransform: 'capitalize', fontSize: 18, fontFamily: 'Roboto',
                     '&:hover': {
@@ -154,7 +157,7 @@ function Header() {
                     },
                   }}
                 >
-                  <a href="/businesses">{page}</a>
+                  <Link to={page.link}>{page.title}</Link>
                 </Button>
               ))}
             </Box>
