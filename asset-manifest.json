@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rupee-uk-website/static/css/main.df8c43ba.css",
-    "main.js": "/rupee-uk-website/static/js/main.9066df98.js",
+    "main.js": "/rupee-uk-website/static/js/main.caa38ccd.js",
     "static/js/787.b7b32b64.chunk.js": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js",
     "static/media/home.png": "/rupee-uk-website/static/media/home.b83862839021ef62ec20.png",
     "static/media/bus.jpg": "/rupee-uk-website/static/media/bus.efbf6eb34238e24ce438.jpg",
@@ -9,11 +9,11 @@
     "static/media/Rupee-logo-dark.png": "/rupee-uk-website/static/media/Rupee-logo-dark.e643af5e34021d5817a4.png",
     "index.html": "/rupee-uk-website/index.html",
     "main.df8c43ba.css.map": "/rupee-uk-website/static/css/main.df8c43ba.css.map",
-    "main.9066df98.js.map": "/rupee-uk-website/static/js/main.9066df98.js.map",
+    "main.caa38ccd.js.map": "/rupee-uk-website/static/js/main.caa38ccd.js.map",
     "787.b7b32b64.chunk.js.map": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df8c43ba.css",
-    "static/js/main.9066df98.js"
+    "static/js/main.caa38ccd.js"
   ]
 }
