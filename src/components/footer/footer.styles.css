@@ -6,13 +6,25 @@
   align-items: center;
 }
 
-.footer img {
+#linkedin {
   width: 40px;
+}
+
+#awards {
+  width: 150px;
 }
 
 @media only screen and (max-width: 700px) {
   .footer {
     flex-direction: column;
-    height: 8rem;
+    height: 11rem;
+  }
+
+  #linkedin {
+    padding-bottom: 1rem;
+  }
+
+  #awards {
+    width: 100px;
   }
 }

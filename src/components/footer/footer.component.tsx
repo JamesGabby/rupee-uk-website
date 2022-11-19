@@ -1,4 +1,5 @@
 import LinkedInLogo from '../../images/linkedin.png';
+import Awards from '../../images/award.png'
 import './footer.styles.css';
 
 function Footer() {
@@ -10,8 +11,9 @@ function Footer() {
         <a href="mailto:oliver.jones@rupee.solutions" target="_blank" rel="noreferrer">oliver.jones@rupee.solutions</a>
       </p>
       <a href="https://www.linkedin.com/company/rupee-uk/" target="_blank" rel="noreferrer">
-        <img src={LinkedInLogo} alt="logo" />
+        <img id="linkedin" src={LinkedInLogo} alt="logo" />
       </a>
+      <img id='awards' src={Awards} alt="awards" />
     </div>
   )
 }
