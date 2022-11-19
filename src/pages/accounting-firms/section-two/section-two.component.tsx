@@ -11,7 +11,7 @@ const SectionTwo = () => {
         paddingBottom: 10
       }}
     >
-      <Grid id='s1' container sx={{ flexGrow: 1 }} spacing={1}>
+      <Grid id='/accounting/#s1' container sx={{ flexGrow: 1 }} spacing={1}>
         <Grid item xs={12}>
           <h1 className='text-4xl text-green-100 font-semibold mt-20 px-1'>Increase the performance of your accounting firm.</h1>
           <div className='flex items-center flex-col px-10'>

@@ -31,7 +31,7 @@ const SectionOne = () => {
             </h1>
           </div>
           <div className='cursor-pointer '>
-            <a href='/s1'>
+            <a href='#/accounting/#s1'>
               <DownArrow />
             </a>
           </div>
