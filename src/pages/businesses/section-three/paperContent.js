@@ -5,13 +5,13 @@ import CloudIcon from '@mui/icons-material/Cloud';
 export const paperContent = [
   {
     id: 1,
-    title: 'Access all information securely.',
+    title: 'Access All Information Securely',
     description: 'Store documents and important information in the cloud, ensuring easy access and complete security.',
     icon: <CloudIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 0 }} />
   },
   {
     id: 2,
-    title: "Increase your team's productivity.",
+    title: "Increase Your Team's Productivity",
     description: 'Our solution uses algorithms that detect and enable the automation of recurring tasks, saving you time.',
     icon: <DeviceHubIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 0 }} />
   },

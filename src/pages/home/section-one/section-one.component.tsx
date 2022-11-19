@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import { Helmet } from 'react-helmet';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
-import home from '../../../images/home.png'
+import home from '../../../images/home-mob.jpg'
 
 const SectionOne = () => {
   return (
@@ -33,7 +33,7 @@ const SectionOne = () => {
             <p className='text-white text-right font-medium'>Solutions</p>
           </div>
           <div>
-            <h1 className='text-4xl text-white font-semibold mt-12'>
+            <h1 className='text-4xl text-white font-semibold mt-12 px-10'>
               Full control over accounting, tax and payroll tasks. Automate deadlines and obligations.
             </h1>
           </div>
