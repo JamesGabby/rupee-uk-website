@@ -26,7 +26,7 @@ const SectionOne = () => {
             <p className='text-white text-right font-medium'>Solutions</p>
           </div>
           <div>
-            <h1 className='text-4xl text-white font-semibold mt-12'>
+            <h1 className='text-4xl text-white font-semibold mt-12 px-2'>
               Manage your accounting team's deliverables and have full control of deadlines and obligations.
             </h1>
           </div>

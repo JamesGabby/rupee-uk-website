@@ -1,24 +1,24 @@
-import BlurOnIcon from '@mui/icons-material/BlurOn';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import SpeedIcon from '@mui/icons-material/Speed';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import DeviceHubIcon from '@mui/icons-material/DeviceHub';
+import CloudIcon from '@mui/icons-material/Cloud';
 
 export const paperContent = [
   {
     id: 1,
-    title: 'Organise',
-    description: 'Sort your obligations, store documents and issue reports for a streamlined decision making process.',
-    icon: <LibraryBooksIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 10 }} />
+    title: 'Access all information securely.',
+    description: 'Store documents and important information in the cloud, ensuring easy access and complete security.',
+    icon: <CloudIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 0 }} />
   },
   {
     id: 2,
-    title: 'Transparency',
-    description: 'Full transparency of all tasks. Management has the ability to monitor all changes to tasks and documents.',
-    icon: <BlurOnIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 10 }} />
+    title: "Increase your team's productivity.",
+    description: 'Our solution uses algorithms that detect and enable the automation of recurring tasks, saving you time.',
+    icon: <DeviceHubIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 0 }} />
   },
   {
     id: 3,
-    title: 'Save Time',
-    description: 'The ability to automate recurring tasks saves you up to 312 hours per year.',
-    icon: <SpeedIcon sx={{ fontSize: 50, color: '#44ae44', marginTop: 10 }} />
+    title: 'On-line Support',
+    description: 'Count on us for any questions. Our team of experts will be ready to help.',
+    icon: <SupportAgentIcon sx={{ fontSize: 50, color: '#44ae44', marginBottom: 0 }} />
   }
 ]
