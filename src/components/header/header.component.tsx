@@ -8,9 +8,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import DiamondIcon from '@mui/icons-material/Diamond';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import logo from '../../images/Rupee-logo-dark.png'
@@ -19,7 +17,6 @@ import { Link } from 'react-router-dom';
 const pages = [
   { title: 'For Accounting Firms', link: "/accounting" }, { title: 'For Businesses', link: "/business" }
 ];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 declare module '@mui/material/styles' {
   interface Theme {
@@ -53,7 +50,6 @@ const darkBlueHeaderTheme = createTheme({
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const [hasScrolled, setHasScrolled] = React.useState<null | boolean>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -62,12 +58,7 @@ function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  
   const reForm = () =>
     window.scrollY >= 50 ? setHasScrolled(true) : setHasScrolled(false);
 
@@ -81,15 +72,13 @@ function Header() {
             <Typography
               variant="h6"
               noWrap
-              component="a"
-              href="/"
               sx={{
                 mr: 7.5,
                 display: { xs: 'none', md: 'flex' }
               }}
             >
               <div>
-              <Link to="/"><img className='w-32' src={logo} alt='logo' /></Link>
+                <Link to="/"><img className='w-32' src={logo} alt='logo' /></Link>
                 <p className='text-white text-right' style={{ fontSize: '.4rem'}}>Solutions</p>
               </div>
             </Typography>
@@ -102,7 +91,7 @@ function Header() {
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                <MenuIcon />
+                <MenuIcon sx={{ fontSize: 40 }} />
               </IconButton>
               <Menu
                 id="menu-appbar"
@@ -124,7 +113,7 @@ function Header() {
               >
                 {pages.map((page) => (
                   <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.title}</Typography>
+                    <Typography textAlign="center"><Link to={page.link}>{page.title}</Link></Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -160,35 +149,6 @@ function Header() {
                   <Link to={page.link}>{page.title}</Link>
                 </Button>
               ))}
-            </Box>
-            <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <DiamondIcon sx={{ fontSize: 40, color: '#fff' }} />
-                </IconButton>
-              </Tooltip>
-              <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
             </Box>
           </Toolbar>
         </Container>
