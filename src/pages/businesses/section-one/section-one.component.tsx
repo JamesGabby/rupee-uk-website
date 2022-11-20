@@ -2,8 +2,14 @@ import { Box } from '@mui/material';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
 import business from '../../../images/bus.jpg'
+import { useLayoutEffect } from 'react';
 
 const SectionOne = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+  
   return (
     <Box
       sx={{

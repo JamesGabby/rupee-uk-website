@@ -3,8 +3,14 @@ import { Helmet } from 'react-helmet';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
 import home from '../../../images/home-mob.jpg'
+import { useLayoutEffect } from 'react';
 
 const SectionOne = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
+  
   return (
     <Box
       sx={{
@@ -37,7 +43,7 @@ const SectionOne = () => {
               Full control over accounting, tax and payroll tasks. Automate deadlines and obligations.
             </h1>
           </div>
-          <div className='cursor-pointer '>
+          <div className='cursor-pointer'>
             <a href='#/#s1'>
               <DownArrow />
             </a>
