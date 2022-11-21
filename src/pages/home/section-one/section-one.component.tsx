@@ -22,9 +22,9 @@ const SectionOne = () => {
     >
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Rupee Solutions UK</title>
+        <title>Rupee Solutions Home</title>
         <link rel="canonical" href="https://rupeesolutions.co.uk/" />
-        <meta name="description" content="Intelligent management of tax, accounting and payroll processes." />
+        <meta name="description" content="Full control over accounting, tax and payroll tasks. Automate deadlines and obligations." />
       </Helmet>
       <Box
         sx={{
