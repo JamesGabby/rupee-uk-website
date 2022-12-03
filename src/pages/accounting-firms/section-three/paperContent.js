@@ -18,7 +18,7 @@ export const paperContent = [
   {
     id: 3,
     title: 'Save Time',
-    description: 'The ability to automate recurring tasks saves you up to 312 hours per year.',
+    description: 'Saving you both time and money by automating your repetitive and mundane tasks.',
     icon: <SpeedIcon sx={{ fontSize: 50, color: '#44ae44' }} />
   }
 ]

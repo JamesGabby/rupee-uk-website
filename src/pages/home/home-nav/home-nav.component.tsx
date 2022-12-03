@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
 const images = [
   {
     url: 'https://www.accountantsdaily.com.au/images/articleimages-391x261/850x492/accounting_forex_ad.jpg',
-    title: 'Rupee For Accounting Firms',
+    title: 'Rupee For Accounting Teams',
     width: '50%',
     link: 'accounting/#top'
   },
   {
     url: 'https://media.www.kent.ac.uk/se/25928/MEIB1920x1080_2000w.jpg',
-    title: 'Rupee For Corporations',
+    title: 'Rupee For Accounting Firms',
     width: '50%',
     link: 'business'
   }

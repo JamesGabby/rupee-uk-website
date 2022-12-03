@@ -25,7 +25,7 @@ const SectionTwo = () => {
             </span>
             <span className='inline-flex'>
               <DiamondIcon sx={{ fontSize: 40, color: '#44ae44', marginTop: 4, marginRight: 3 }} />
-              <h3 className='text-2xl text-white font-normal mt-8'>Easy and Safe.</h3>
+              <h3 className='text-2xl text-white font-normal mt-8'>Safe and easy to use.</h3>
             </span>
           </div>
           <Grid container justifyContent="center" spacing={2} sx={{ marginTop: 5 }}>

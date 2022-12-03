@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <p className="text-l text-white font-semibold pt-4">+447746767412</p>
+      <p className="text-l text-white font-semibold pt-4">+44 7746 767 412</p>
       <p className="text-l text-white font-semibold py-2">
         <a href="mailto:oliver.jones@rupee.solutions" target="_blank" rel="noreferrer">oliver.jones@rupee.solutions</a>
       </p>

@@ -15,7 +15,7 @@ import logo from '../../images/Rupee-logo-dark.png'
 import { Link } from 'react-router-dom';
 
 const pages = [
-  { title: 'For Accounting Firms', link: "/accounting" }, { title: 'For Businesses', link: "/business" }
+  { title: 'Accounting Teams', link: "/accounting" }, { title: 'Accounting Firms', link: "/business" }
 ];
 
 declare module '@mui/material/styles' {

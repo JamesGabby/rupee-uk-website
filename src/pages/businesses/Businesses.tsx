@@ -5,8 +5,8 @@ import SectionThree from "./section-three/section-three.component";
 const Businesses = () => (
   <div className="App">
     <SectionOne />
-    <SectionTwo />
     <SectionThree />
+    <SectionTwo />
   </div>
 );
 
