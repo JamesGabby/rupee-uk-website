@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/rupee-uk-website/static/css/main.937a2f7c.css",
-    "main.js": "/rupee-uk-website/static/js/main.d6c734b2.js",
+    "main.css": "/rupee-uk-website/static/css/main.af35dc9a.css",
+    "main.js": "/rupee-uk-website/static/js/main.65203cd5.js",
     "static/js/787.b7b32b64.chunk.js": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js",
     "static/media/bus.jpg": "/rupee-uk-website/static/media/bus.efbf6eb34238e24ce438.jpg",
     "static/media/home-mob.jpg": "/rupee-uk-website/static/media/home-mob.5175f7026ed5a581c97d.jpg",
+    "static/media/acc-firm-nav-min.jpg": "/rupee-uk-website/static/media/acc-firm-nav-min.a763c2a2b676572b803c.jpg",
     "static/media/acc.jpg": "/rupee-uk-website/static/media/acc.386b954b527c542e6a4d.jpg",
+    "static/media/acc-team-nav-min.jpg": "/rupee-uk-website/static/media/acc-team-nav-min.eeb92a8f1013b878f63c.jpg",
     "static/media/award.png": "/rupee-uk-website/static/media/award.a80fbcb51d2f05d117a0.png",
     "static/media/Rupee-logo-dark.png": "/rupee-uk-website/static/media/Rupee-logo-dark.e643af5e34021d5817a4.png",
     "index.html": "/rupee-uk-website/index.html",
-    "main.937a2f7c.css.map": "/rupee-uk-website/static/css/main.937a2f7c.css.map",
-    "main.d6c734b2.js.map": "/rupee-uk-website/static/js/main.d6c734b2.js.map",
+    "main.af35dc9a.css.map": "/rupee-uk-website/static/css/main.af35dc9a.css.map",
+    "main.65203cd5.js.map": "/rupee-uk-website/static/js/main.65203cd5.js.map",
     "787.b7b32b64.chunk.js.map": "/rupee-uk-website/static/js/787.b7b32b64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.937a2f7c.css",
-    "static/js/main.d6c734b2.js"
+    "static/css/main.af35dc9a.css",
+    "static/js/main.65203cd5.js"
   ]
 }
