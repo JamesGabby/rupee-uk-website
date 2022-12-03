@@ -3,7 +3,6 @@ import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
 import business from '../../../images/bus.jpg'
 import { useLayoutEffect } from 'react';
-import { Helmet } from 'react-helmet';
 
 const SectionOne = () => {
 
@@ -20,12 +19,6 @@ const SectionOne = () => {
         backgroundSize: 'cover'
       }}
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Rupee Business</title>
-        <link rel="canonical" href="https://rupeesolutions.co.uk/" />
-        <meta name="description" content="Manage your accounting team's deliverables and have full control of deadlines and obligations." />
-      </Helmet>
       <Box
         sx={{
           width: '100%',

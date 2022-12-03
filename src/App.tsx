@@ -8,6 +8,7 @@ import Accounting from './pages/accounting-firms/Accounting';
 import Businesses from './pages/businesses/Businesses';
 import Footer from './components/footer/footer.component';
 import Copyright from './components/copyright/copyright.component';
+import { HelmetProvider } from 'react-helmet-async';
   
 const bodyTheme = createTheme({
   palette: {
@@ -24,16 +25,18 @@ const App = () => {
   return (
     <ThemeProvider theme={bodyTheme}>
       <HashRouter>
-        <div className="App">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/accounting" element={<Accounting />} />
-            <Route path="/business" element={<Businesses />} />
-          </Routes>
-          <Footer />
-          <Copyright />
-        </div>
+        <HelmetProvider>
+          <div className="App">
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/accounting" element={<Accounting />} />
+              <Route path="/business" element={<Businesses />} />
+            </Routes>
+            <Footer />
+            <Copyright />
+          </div>
+        </HelmetProvider>
       </HashRouter>
     </ThemeProvider>
   );

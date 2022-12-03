@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import { Helmet } from 'react-helmet';
 import DownArrow from '../../../components/down-arrow/down-arrow.component'
 import logo from '../../../images/Rupee-logo-dark.png'
 import home from '../../../images/home-mob.jpg'
@@ -20,12 +19,6 @@ const SectionOne = () => {
         backgroundSize: 'cover'
       }}
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Rupee Solutions Home</title>
-        <link rel="canonical" href="https://rupeesolutions.co.uk/" />
-        <meta name="description" content="Full control over accounting, tax and payroll tasks. Automate deadlines and obligations." />
-      </Helmet>
       <Box
         sx={{
           width: '100%',
