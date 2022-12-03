@@ -4,17 +4,19 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import teams from '../../../images/acc-team-nav-min.jpg'
+import firms from '../../../images/acc-firm-nav-min.jpg'
 
 const images = [
   {
-    url: 'https://www.accountantsdaily.com.au/images/articleimages-391x261/850x492/accounting_forex_ad.jpg',
-    title: 'Rupee For Accounting Teams',
+    url: teams,
+    title: 'For Accounting Teams',
     width: '50%',
     link: 'accounting/#top'
   },
   {
-    url: 'https://media.www.kent.ac.uk/se/25928/MEIB1920x1080_2000w.jpg',
-    title: 'Rupee For Accounting Firms',
+    url: firms,
+    title: 'For Accounting Firms',
     width: '50%',
     link: 'business'
   }
